@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "black";
+    src: url("../webfonts/Tajawal/Tajawal-Black.ttf")
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("../webfonts/Tajawal/Tajawal-Bold.ttf")
+}
+
+@font-face {
+    font-family: "extra-bold";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "extra-light";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraLight.ttf")
+}
+
+@font-face {
+    font-family: "light";
+    src: url("../webfonts/Tajawal/Tajawal-Light.ttf")
+}
+
+@font-face {
+    font-family: "medium";
+    src: url("../webfonts/Tajawal/Tajawal-Medium.ttf")
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("../webfonts/Tajawal/Tajawal-Regular.ttf")
+}
