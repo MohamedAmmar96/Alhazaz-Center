@@ -1297,26 +1297,26 @@
         }
         html[dir=ltr] .nav-box .nav-list {
             margin-right: 0;
-            margin-left: 15px;
+            margin-left: 25px;
         }
         .nav-list .nav-list-li {
             margin-left: 15px;
         }
         html[dir=ltr] .nav-list .nav-list-li {
             margin-left: 0;
-            margin-right: 10px;
+            margin-right: 15px;
         }
         .nav-list-li .nav-link {
             font-size: 13px;
         }
         html[dir=ltr] .nav-list-li .nav-link {
-            font-size: 12px;
+            font-size: 14px;
         }
         .contact-us .contact-info {
             font-size: 13px;
         }
         html[dir=ltr] .contact-us .contact-info {
-            font-size: 12px;
+            font-size: 14px;
         }
         .contact-info .contact-phone {
             font-size: 14px;
