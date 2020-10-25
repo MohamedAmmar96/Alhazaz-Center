@@ -281,7 +281,6 @@
         flex-direction: row;
     }
     
-    .terms .menu,
     .terms .search,
     .terms .config,
     .terms .fav,
@@ -293,14 +292,12 @@
         position: relative;
     }
     
-    .terms .menu,
     .terms .search,
     .terms .config,
     .terms .fav {
         margin-left: 15px;
     }
     
-    html[dir=ltr] .terms .menu,
     html[dir=ltr] .terms .search,
     html[dir=ltr] .terms .config,
     html[dir=ltr] .terms .fav {
@@ -308,7 +305,6 @@
         margin-right: 10px;
     }
     
-    .terms .menu .menu-icon,
     .terms .search .search-icon,
     .terms .config .config-icon,
     .terms .fav .fav-icon,
@@ -336,7 +332,6 @@
         font-size: 14px;
     }
     
-    .terms .menu:hover .menu-icon,
     .terms .search:hover .search-icon,
     .terms .config:hover .config-icon,
     .terms .fav:hover .fav-icon,
@@ -347,7 +342,6 @@
         color: #ffac00;
     }
     
-    .terms .menu,
     .terms .search {
         display: none;
     }
@@ -1279,6 +1273,7 @@
         font-family: "bold";
         margin-top: 10px;
         margin-bottom: 30px;
+        margin-top: 5px;
     }
     
     .footer-heading .footer-link {
@@ -1609,8 +1604,8 @@
     
     .scroll-top {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 70px;
+        right: 15px;
         background-color: #fff;
         box-shadow: 3px 3px 15px #0000001c, -3px -3px 15px #0000001c;
         color: #000;
@@ -1658,16 +1653,16 @@
     .whatsapp {
         position: fixed;
         display: block;
-        bottom: 100px;
-        right: 27px;
-        width: 60px;
-        height: 60px;
-        line-height: 63px;
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        line-height: 53px;
         background-color: #0dc142;
         border-radius: 50%;
         text-align: center;
         z-index: 999;
-        font-size: 36px;
+        font-size: 30px;
         color: #fff;
         text-decoration: none;
     }

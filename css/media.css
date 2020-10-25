@@ -13,6 +13,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         /*** Start of Search Box ***/
         .rools .search-box {
@@ -48,13 +50,28 @@
         .header-content .rools {
             height: 105px;
             padding-top: 10px;
+            justify-content: center;
         }
-        .terms .menu,
+        .menu-box {
+            height: 105px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-box .menu {
+            font-size: 23px;
+            color: #000;
+            transition: all 0.4s ease-in-out;
+        }
+        .menu-box .menu:hover {
+            color: #ffac00;
+        }
         .terms .search {
             display: flex;
             margin-left: 30px;
         }
-        html[dir=ltr] .terms .menu,
         html[dir=ltr] .terms .search {
             margin-left: 0;
             margin-right: 30px;
@@ -64,7 +81,6 @@
         .terms .shop .shop-name {
             display: none;
         }
-        .terms .menu .menu-icon,
         .terms .search .search-icon,
         .terms .shop .shop-icon {
             font-size: 23px;
@@ -80,6 +96,7 @@
             padding: 30px 10px;
             overflow: auto;
             transition: all 0.4s ease-in-out;
+            background-color: #fff;
             /* display: none; */
         }
         html[dir=ltr] .mo-nav {
@@ -120,7 +137,7 @@
             margin-bottom: 40px;
         }
         .mo-nav .page-language .lang {
-            color: #fff;
+            color: #000;
             padding: 0;
             font-family: "medium";
             font-size: 13px;
@@ -162,7 +179,7 @@
             display: none;
         }
         .lang-li .lang-link {
-            color: #fff;
+            color: #000;
             font-size: 13px;
             font-family: "medium";
         }
@@ -231,7 +248,7 @@
             display: none;
         }
         .cats-li .cats-link {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-size: 14px;
             font-family: "medium";
@@ -282,7 +299,7 @@
             display: none;
         }
         .trips-li .trips-link {
-            color: #fff;
+            color: #000;
             font-size: 13px;
             font-family: "medium";
         }
@@ -304,6 +321,7 @@
             margin-right: 0;
         }
         .nav-list-li .nav-link {
+            color: #000;
             font-family: "medium";
             font-size: 16px;
             width: 100%;
@@ -344,7 +362,7 @@
             padding-bottom: 0;
         }
         .mo-nav .config-li .config-link {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-size: 14px;
             font-family: "medium";
@@ -359,6 +377,7 @@
             font-size: 20px;
             margin-left: 0;
             margin-bottom: 10px;
+            color: #000;
         }
         html[dir=ltr] .contact-us .phone-icon {
             margin-right: 0;
@@ -375,6 +394,7 @@
         .contact-us .contact-phone {
             margin-right: 0;
             font-size: 20px;
+            color: #000;
         }
         html[dir=ltr] .contact-us .contact-phone {
             margin-left: 0;
@@ -579,14 +599,6 @@
         .loading-overlay .loading-overlay-box {
             width: 60%;
         }
-        .whatsapp {
-            bottom: 90px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            line-height: 53px;
-            font-size: 30px;
-        }
     }
     /**************** Extra Small Screens From 0 to 500px ****************/
     
@@ -602,15 +614,21 @@
             height: 85px;
             padding-top: 10px;
         }
-        .terms .menu,
+        .menu-box {
+            padding-top: 10px;
+            height: 85px;
+        }
+        .menu-box .menu {
+            font-size: 20px;
+        }
         .terms .search {
             display: flex;
-            margin-left: 20px;
+            margin-left: 18px;
         }
         html[dir=ltr] .terms .menu,
         html[dir=ltr] .terms .search {
             margin-left: 0;
-            margin-right: 20px;
+            margin-right: 18px;
         }
         .terms .menu .menu-icon,
         .terms .search .search-icon,
@@ -643,6 +661,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         /*** Start of Search Box ***/
         .rools .search-box {
@@ -678,13 +698,25 @@
         .header-content .rools {
             height: 120px;
             padding-top: 10px;
+            justify-content: center;
         }
-        .terms .menu,
+        .menu-box {
+            height: 120px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-box .menu {
+            font-size: 25px;
+            color: #000;
+            transition: all 0.4s ease-in-out;
+        }
         .terms .search {
             display: flex;
             margin-left: 30px;
         }
-        html[dir=ltr] .terms .menu,
         html[dir=ltr] .terms .search {
             margin-left: 0;
             margin-right: 30px;
@@ -694,7 +726,6 @@
         .terms .shop .shop-name {
             display: none;
         }
-        .terms .menu .menu-icon,
         .terms .search .search-icon,
         .terms .shop .shop-icon {
             font-size: 25px;
@@ -710,6 +741,7 @@
             padding: 30px 10px;
             overflow: auto;
             transition: all 0.4s ease-in-out;
+            background-color: #fff;
             /* display: none; */
         }
         html[dir=ltr] .mo-nav {
@@ -753,7 +785,7 @@
             margin-bottom: 40px;
         }
         .mo-nav .page-language .lang {
-            color: #fff;
+            color: #000;
             padding: 0;
             font-family: "medium";
             font-size: 13px;
@@ -795,7 +827,7 @@
             display: none;
         }
         .lang-li .lang-link {
-            color: #fff;
+            color: #000;
             font-size: 13px;
             font-family: "medium";
         }
@@ -864,7 +896,7 @@
             display: none;
         }
         .cats-li .cats-link {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-size: 14px;
             font-family: "medium";
@@ -915,7 +947,7 @@
             display: none;
         }
         .trips-li .trips-link {
-            color: #fff;
+            color: #000;
             font-size: 13px;
             font-family: "medium";
         }
@@ -937,6 +969,7 @@
             margin-right: 0;
         }
         .nav-list-li .nav-link {
+            color: #000;
             font-family: "medium";
             font-size: 16px;
             width: 100%;
@@ -977,7 +1010,7 @@
             padding-bottom: 0;
         }
         .mo-nav .config-li .config-link {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-size: 14px;
             font-family: "medium";
@@ -992,6 +1025,7 @@
             font-size: 20px;
             margin-left: 0;
             margin-bottom: 10px;
+            color: #000;
         }
         html[dir=ltr] .contact-us .phone-icon {
             margin-right: 0;
@@ -1008,6 +1042,7 @@
         .contact-us .contact-phone {
             margin-right: 0;
             font-size: 20px;
+            color: #000;
         }
         html[dir=ltr] .contact-us .contact-phone {
             margin-left: 0;
@@ -1213,14 +1248,6 @@
         }
         .loading-overlay .loading-overlay-box {
             width: 100%;
-        }
-        .whatsapp {
-            bottom: 90px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            line-height: 53px;
-            font-size: 30px;
         }
     }
     /*********************  Medium Screens ********************/
