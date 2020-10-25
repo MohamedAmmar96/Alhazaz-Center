@@ -123,15 +123,15 @@
         width: 100px;
         background-color: #fff;
         z-index: 99999;
-        box-shadow: 3px 3px 15px #0000001c, -3px -3px 15px #0000001c;
+        box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
         text-align: center;
-        padding: 5px 0 2px 0;
-        border-radius: 10px;
+        padding: 0;
+        border-radius: 0;
         display: none;
     }
     
     .lang-list .lang-li {
-        padding: 7px 0 10px 0;
+        padding: 7px 0 7px 0;
         position: relative;
     }
     
@@ -184,13 +184,13 @@
         position: fixed;
         top: 25%;
         left: 50%;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 32px;
+        height: 32px;
+        line-height: 34px;
         text-align: center;
         transform: translate(-50%);
         z-index: 99999;
-        background-color: #ffac00;
+        background-color: #dedede;
         outline: none;
         border: none;
         color: #fff;
@@ -247,7 +247,7 @@
     }
     
     .search-bar .search-input:focus {
-        border: 2px solid #000;
+        border: 2px solid #ffac00;
     }
     
     .search-bar .search-click {
@@ -362,9 +362,9 @@
         z-index: 99999;
         width: 130px;
         text-align: center;
-        box-shadow: 3px 3px 15px #0000001c, -3px -3px 15px #0000001c;
-        padding: 5px 0 2px 0;
-        border-radius: 10px;
+        box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
+        padding: 0;
+        border-radius: 0;
         display: none;
     }
     
@@ -405,7 +405,8 @@
     
     .mo-nav .close,
     .mo-nav .page-language,
-    .nav-list .nav-list-li:nth-child(1) {
+    .nav-list .nav-list-li:nth-child(2),
+    .nav-list .nav-list-li:nth-child(3) {
         display: none;
     }
     
@@ -680,7 +681,7 @@
         font-size: 14px;
     }
     
-    .contact-info .contact-phone {
+    .contact-us .contact-phone {
         margin-right: 10px;
         color: #fff;
         text-decoration: none;
@@ -689,19 +690,18 @@
         transition: all 0.4s ease-in-out;
     }
     
-    html[dir=ltr] .contact-info .contact-phone {
+    html[dir=ltr] .contact-us .contact-phone {
         margin-right: 0;
         margin-left: 10px;
     }
     
-    .contact-info .contact-phone:hover {
+    .contact-us .contact-phone:hover {
         color: #ffac00;
     }
     /***************************** Main Slider Section Start **********************/
     
     .main-slider {
         margin-bottom: 80px;
-        position: relative;
     }
     
     .main-item {
@@ -770,32 +770,6 @@
     .main-slider .owl-carousel .owl-dots .owl-dot.active span {
         background-color: #fff;
     }
-    
-    .whatsapp {
-        position: absolute;
-        display: block;
-        bottom: -20px;
-        right: 50px;
-        width: 60px;
-        height: 60px;
-        line-height: 63px;
-        background-color: #0dc142;
-        border-radius: 50%;
-        text-align: center;
-        z-index: 999;
-        font-size: 36px;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    html[dir=ltr] .whatsapp {
-        right: auto;
-        left: 50px;
-    }
-    
-    .whatsapp .whatsapp-icon {
-        color: #fff;
-    }
     /***************************** Sub Slider 1&2&3 Section Start *****************/
     
     .sub-slider .sub-slider-title {
@@ -828,12 +802,12 @@
     
     .item-img-box .item-img {
         width: 100%;
-        transform: scale(1.05) rotate(-2.5deg);
+        transform: scale(1.05);
         transition: all 0.4s ease-in-out;
     }
     
     .item-img-box:hover .item-img {
-        transform: scale(1) rotate(0deg);
+        transform: scale(1);
     }
     
     .item-img-box .discount {
@@ -911,7 +885,7 @@
         height: 35px;
         text-align: center;
         display: inline-block;
-        background-color: #fff100;
+        background-color: #ffac00;
         border-radius: 20px;
         color: #fff;
         text-decoration: none;
@@ -941,15 +915,19 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: #ffac00;
-        transform: scale(2);
-        border-radius: 100%;
+        background-color: #fff100;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
         z-index: -1;
         transition: all 0.4s ease-in-out;
     }
     
+    html[dir=ltr] .cart-like .add-to-cart::after {
+        transform-origin: 0 100%;
+    }
+    
     .cart-like .add-to-cart:hover::after {
-        transform: scale(0);
+        transform: scaleX(1);
     }
     
     .cart-like .add-to-cart .cart-icon {
@@ -972,7 +950,7 @@
         text-align: center;
         display: inline-block;
         line-height: 37px;
-        background-color: #fff100;
+        background-color: #fff;
         overflow: hidden;
         z-index: 1;
         position: relative;
@@ -982,7 +960,7 @@
     
     .cart-like .like:hover {
         color: #000;
-        border: none;
+        border: 1px solid #fff100;
     }
     
     .cart-like .like::after {
@@ -992,15 +970,19 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff;
-        transform: scale(2);
-        border-radius: 100%;
+        background-color: #fff100;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
         z-index: -1;
         transition: all 0.4s ease-in-out;
     }
     
+    html[dir=ltr] .cart-like .like::after {
+        transform-origin: 0 50%;
+    }
+    
     .cart-like .like:hover::after {
-        transform: scale(0);
+        transform: scaleX(1);
     }
     
     .sub-slider .owl-carousel .owl-nav .owl-prev,
@@ -1350,10 +1332,10 @@
         height: 50px;
         background-color: #fff;
         padding-right: 30px;
-        border: 2px solid #dedede;
         border-radius: 25px;
         outline: none;
         font-family: "regular";
+        border: 2px solid #000;
         font-size: 16px;
         color: #000;
         transition: all 0.4s ease-in-out;
@@ -1368,6 +1350,10 @@
         font-family: "regular";
         font-size: 16px;
         color: #999;
+    }
+    
+    .email-box .email-input:focus {
+        border: 2px solid #ffac00;
     }
     
     .email-box .subscribe {
@@ -1449,8 +1435,12 @@
         transition: all 0.4s ease-in-out;
     }
     
+    html[dir=ltr] .footer-icon-li .footer-icon-link::after {
+        transform-origin: 0 50%;
+    }
+    
     .footer-icon-li .footer-icon-link:hover::after {
-        transform: scaleY(1);
+        transform: scaleX(1);
     }
     
     .footer-icon-li .footer-icon-link:hover {
@@ -1623,7 +1613,7 @@
         right: 30px;
         background-color: #fff;
         box-shadow: 3px 3px 15px #0000001c, -3px -3px 15px #0000001c;
-        color: #8e2528;
+        color: #000;
         width: 50px;
         height: 50px;
         line-height: 52px;
@@ -1652,10 +1642,40 @@
         transition: all 0.4s ease-in-out;
     }
     
+    html[dir=ltr] .scroll-top::after {
+        transform-origin: 0 50%;
+    }
+    
     .scroll-top:hover::after {
         transform: scale(1);
     }
     
     .scroll-top:hover {
+        color: #fff;
+    }
+    /****** Whatsapp Fixed ******/
+    
+    .whatsapp {
+        position: fixed;
+        display: block;
+        bottom: 100px;
+        right: 27px;
+        width: 60px;
+        height: 60px;
+        line-height: 63px;
+        background-color: #0dc142;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 999;
+        font-size: 36px;
+        color: #fff;
+        text-decoration: none;
+    }
+    /* html[dir=ltr] .whatsapp {
+        right: auto;
+        left: 27px;
+    } */
+    
+    .whatsapp .whatsapp-icon {
         color: #fff;
     }
